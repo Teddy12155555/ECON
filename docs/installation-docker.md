@@ -55,7 +55,8 @@ bash fetch_data.sh # requires username and password
     - CUDA = 11.3
     - Python = 3.8
 - [X] pre-built image with docker compose
-- [ ] docker run command, Dockerfile
+- [X] docker run command
+- [ ] Dockerfile for custom setting
 - [ ] verify on WSL (Windows)
 
 ## Citation
