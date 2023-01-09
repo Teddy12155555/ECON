@@ -9,9 +9,12 @@ cd ECON
 ## Environment
 - **GPU Memory > 12GB**
 
-start with [docker compose](https://docs.docker.com/compose/)
+start with [Docker](https://www.docker.com/)
 ```bash
-# you can change your container name by passing --name "parameter" 
+# you can change your container name by passing --name "parameter"
+docker run -it [--name myecon] --runtime=nvidia -e NVIDIA_VISIBLE_DEVICES='all' -e DISPLAY=${DISPLAY}  -p 8000:8000 -v /tmp/.X11-unix:/tmp/.X11-unix -v ${PWD}:/root/code teddy12155555/econ:v1
+
+# or by using docker compose
 docker compose run [--name myecon] econ
 ```
 
